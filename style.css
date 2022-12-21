@@ -1,0 +1,730 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria&display=swap');
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Alexandria', sans-serif;
+
+}
+
+.border
+{
+    /* border: 1px solid black; */
+}
+
+.brdr-rad1p5em
+{
+    border-radius: 1.5em;
+}
+
+.hidescrollbar::-webkit-scrollbar 
+{
+    display: none;
+}
+
+.ai
+{
+    display: flex;
+    align-items: center;
+}
+
+.jc
+{
+    display: flex;
+    justify-content: center;
+}
+
+.fdcol
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.fdrow
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.cardwhite
+{
+    background-color: #ffffff;
+}
+
+.spbw
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexib
+{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111315;
+    font-weight: 700;
+}
+
+#circle
+{
+    height: 30px;
+    width: 30px;
+    background-color: #111315;
+    border-radius: 50%;
+    /* z-index: -1; */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #f6f6f6;
+}
+
+/* ! MENUBAR  */
+    #menubardiv
+    {
+        flex: 0.215;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #111315;
+    }
+
+        #menulistdiv
+        {
+            height: 65%;
+            width: 75%;
+            margin: 15% 13%;
+        }
+
+            #emploveediv
+            {
+                height: 15%;
+            }
+
+                #e1
+                {
+
+                }
+
+                    #e1icon
+                    {
+                        width: 20%;
+                        aspect-ratio: 1/1;
+                    }
+
+                        #e1icon img
+                        {
+                            width: 100%;
+                            /* aspect-ratio: 1/1; */
+                        }
+
+                    #e1title
+                    {
+                        margin-left: 8%;
+                    }
+
+            #menus
+            {
+                height: 80%;
+            }
+
+                #m1icon
+                {
+                    width: 13%;
+                    aspect-ratio: 1/1;
+                    margin-left: 7%;
+                }
+
+
+
+                    #m1icon img
+                    {
+                        width: 100%;
+                        border-radius: 50%;
+                    }
+
+                #m1
+                {
+                    color: #6c6e72;
+                    font-size: 10px;
+                    padding: 6% 0;
+                }
+
+                    #m1title
+                    {
+                        margin-left: 8%;
+                    }
+
+        #mick
+        {
+            height: 12%;
+            width: 75%;
+            margin: 0 15%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+            #mickicon
+            {
+                width: 20%;
+            }
+
+                #mickicon img
+                {
+                    width: 100%;
+                    border-radius: 50%;
+                }
+
+
+            #mickname
+            {
+                color: white;
+                font-size: 10px;
+            }
+
+            #rightarr
+            {
+                float: right;
+                width: 50%;
+            }
+
+            #rightarr1
+            {
+                float: right;
+                width: 100%;
+            }
+
+                #rightarr1 img
+                {
+                    width: 40%;
+                }
+
+                #rightarr img
+                {
+                    width: 100%;
+                }
+                .flexibcircle{
+                    width: 100%;
+                    height: 100%;
+                    color: white;
+                    background-color: #111315;
+                    border-radius: 50%;
+                }
+/* ! MAIN PAGE  */
+
+    #mainpagediv
+    {
+        flex: 0.785;
+        display: flex;
+        margin-left: 1%;
+        overflow-y: scroll;
+        background-color: #f6f6f6;
+    }
+
+        #leftdiv
+        {
+            flex: 0.47;
+            /* overflow-y: scroll; */
+        }
+
+            #timeoffdiv
+            {
+                width: 94%;
+                margin: 0 3%;
+                /* margin-left: 7%; */
+                aspect-ratio: 470/100; 
+                font-size: 21px;
+                font-weight: 600;
+            }
+
+            #vacationdiv
+            {
+                /* height: 40%; */
+                width: 94%;
+                margin: 3%;
+                aspect-ratio: 470/375;
+                
+            }
+
+                #vacation
+                {
+                    height: 25%;
+                    margin: 0 6%;
+                    display: flex;
+                }
+
+                    #vacleft
+                    {
+                        flex: 1;
+                        
+                    }
+
+                        #vacheading
+                        {
+                            font-weight: 600;
+                        }
+
+                        #vacsubtitle
+                        {
+                            font-size: 9px;
+                            font-weight: 600;
+                            padding: 4px 0px;
+                        }
+
+                            #light
+                            {
+                                color: #9f9f9f;
+                            }
+
+                            #dark
+                            {
+                                font-weight: 600;
+                            }
+
+                    #vacright
+                    {
+                        flex: 1;
+                    }
+
+                        #outer
+                        {
+                            width: 100%;
+                            height: 50%;
+                            display: flex;
+                            /* justify-content: space-around; */
+                            align-items: center;
+                            font-size: 10px;
+                            border-radius: 15px;
+                            background-color: #e6e8ec;
+                        }
+
+                            #innerleft
+                            {
+                                height: 80%;
+                                width: 50%;
+                                border-radius: 9px;
+                                /* padding-left: 9px; */
+                                margin-left: 3px;
+                                background-color: #111315;
+                                color: #e6e8ec;
+                            }
+
+                            #innerright
+                            {
+                                width: 50%;
+                                color: #9ea1a9;
+                            }
+
+                #accrued
+                {
+                    height: 25%;
+                    margin: 0 6%;
+
+                }
+
+                    #accrued #vacright
+                    {
+                        display: flex;
+                        justify-content: end;
+                        font-weight: 600;
+                        font-size: 25px;
+                    }
+
+
+            #teamdiv
+            {
+                width: 94%;
+                margin: 3%;
+                aspect-ratio: 330/240;
+                /* height: 8em; */
+                /* width: 11em */
+            }   
+
+                #team
+                {
+                    height: 20%;
+                    margin: 0 6%;
+                    display: flex;
+                }
+
+                    #teamleft
+                    {
+                        flex: 1;
+                        font-size: 20px;
+                        font-weight: 900;
+                    }
+
+                    #teamright
+                    {
+                        flex: 1;
+                        display: flex;
+                        justify-content: end;
+                        font-size: 12px;
+                        font-weight: 600;
+                    }
+
+                #team1
+                {
+                    height: 20%;
+                    margin: 0 6%;
+                    display: flex;
+                }
+
+                    #team1icon
+                    {
+                        flex: 0.17;
+                    }
+
+                        #team1icon img
+                        {
+                            width: 80%;
+                            border-radius: 50%;
+                        }
+
+                    #team1desc
+                    {
+                        flex: 0.83;
+                        display: flex;
+                        margin-left: 2%;
+                    }
+
+                        #team1left
+                        {
+                            flex: 1;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                        }
+
+                            #team1left p
+                            {
+                                padding: 1px 0 ;
+                            }
+
+                            #name
+                            {
+                                font-size: 11px;
+                                font-weight: 600;
+                            }
+
+                            #desig
+                            {
+                                font-size: 10px;
+                                color: #9f9f9f;
+                            }
+
+                        #team1right
+                        {
+                            flex: 1;
+                            display: flex;
+                            justify-content: end;
+                            
+                        }
+
+                            #team1rightbtn
+                            {
+                                border-radius: 13px;
+                                border: none;
+                                background-color: #f3ca32;
+                                color: white;
+                            }
+
+                            #team1rightbtn p
+                            {
+                                font-size: 11px;
+                                padding: 8px 13px;
+                            }
+
+                    #testicon
+                    {
+                        height: 80%;
+                        aspect-ratio: 1/1;
+                    }
+
+                    #testicon img
+                    {
+                        width: 100%;
+                    }
+
+            #testdiv
+            {
+                width: 94%;
+                margin: 3%;
+                aspect-ratio: 1/1;
+            }
+
+        #rightdiv
+        {
+            flex: 0.53;
+            /* overflow-y: scroll; */
+        }
+
+            #reqtimeoffdiv
+            {
+                width: 94%;
+                margin: 0 3%;
+                aspect-ratio: 5.3/1;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+                #request
+                {
+                    /* height: 55%; */
+                    /* width: 32%; */
+                    width: auto;
+                    border-radius: 15px;
+                    background-color: #111315;
+                }
+
+                    #request p
+                    {
+                        margin: 0% 0%;
+                        white-space: nowrap;
+                        padding: 13px 22px;
+                        color: #c4c6c8;
+                        font-size: 11px;
+                    }
+
+            #calendardiv
+            {
+                /* height: 40%; */
+                width: 94%;
+                margin: 3%;
+                aspect-ratio: 515/460;
+                display: flex;
+                flex-direction: column;
+                
+            }
+
+                #calendar
+                {
+                    flex: 1;
+                    margin: 0 4%;
+                }
+
+                    #vacation1
+                    {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                    }
+
+                        #vacleft1
+                        {
+                            flex: 0.5;
+                        }
+
+                        #vacright1
+                        {
+                            flex: 1;
+                            height: 100%;
+                        }
+
+                #numbers
+                {
+                    flex: 3;
+                    margin: 0 4%;
+                }
+
+                    #calweeks
+                    {
+                        display: flex;
+                        justify-content: space-around;
+                        font-size: 10px;
+                        color: #b5b5b5;
+                        /* padding: 1% 0; */
+                        height: 17%;
+                    }
+
+                    .h90perc
+                    {
+                        height: 90%;
+                    }
+
+                #sickleavesdiv
+                {
+                    margin: 3% 4%;
+                    height: 22%;
+                    border-radius: 20px;
+                    border: 1px solid #e6e8ec;
+                }
+
+                    #sick
+                    {
+                        width: 33.33%;
+                        height: 100%;
+                        padding: 3%;
+                        
+                    }
+
+                        #bar
+                        {
+                            height: 13%;
+                            background-color: #6867ee;
+                            border-radius: 10px;
+                        }
+
+                        #sicktext
+                        {
+                            height: 80%;
+                            display: flex;
+                            justify-content: space-between;
+                        }
+
+                        #sicktitle
+                        {
+                            font-size: 13px;
+                            font-weight: 600;
+                        }
+
+                        #sicksubtitle
+                        {
+                            font-size: 10px;
+                            font-weight: 600;
+                            color: #b5b5b5;
+                            padding-top: 7%;
+                        }
+
+            #upcomingdiv
+            {
+                width: 94%;
+                margin: 3%;
+                aspect-ratio: 380/165;
+                /* height: 8em; */
+                /* width: 11em */
+            }
+
+                #upcoming
+                {
+                    margin: 0 5%;
+                    height: 28.33%;
+                }
+
+                    #upcomingleft
+                    {
+                        flex: 1.8;
+                        font-size: 20px;
+                        font-weight: 900;
+                    }
+
+                    #upcomingright
+                    {
+                        flex: 1;
+                        display: flex;
+                        justify-content: end;
+                        font-size: 12px;
+                        font-weight: 600;
+                    }
+
+                #dayof
+                {
+                    margin: 0 5%;
+                    height: 33.33%;
+                    display: flex;
+                }
+
+                    #dayleft
+                    {
+                        flex: 1;
+                    }
+
+                        #oct14
+                        {
+                            /* width: 27%; */
+                            height: 80%;
+                            aspect-ratio: 1/1;
+                            background-color: #e6e8ec;
+                            border-radius: 10px;
+                        }
+
+                            #oct
+                            {
+                                font-size: 10px;
+                                font-weight: 600;
+                            }
+
+                            #forteen
+                            {
+                                font-size: 20px;
+                                font-weight: 600;
+                            }
+
+                        #defenders
+                        {
+                            width: 90%;
+                            margin-left: 5%;
+                            font-weight: 600;
+                        }
+
+                            #defenders p
+                            {
+                                font-size: 13px;
+                            }
+
+                    #dayright
+                    {
+                        flex: 0.5;
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+
+                        #allday
+                        {
+                            font-size: 10px;
+                            color: #9f9f9f;                        }
+
+                        #rightarr
+                        {
+                            width: 15%;
+                        }
+
+            #testdiv2
+            {
+                width: 94%;
+                margin: 3%;
+                aspect-ratio: 1/1;
+            }
+
+/* ! MEDIA QUERIES */
+
+@media screen and (max-width: 500px) 
+{
+
+    #menubardiv
+    {
+        display: none;
+    }
+
+    #mainpagediv
+    {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+
+    /* #leftdiv
+    {
+        height: 100vh;
+    } */
+
+    body
+    {
+        width: 100%;
+        height: 200vh;
+    }
+}
